@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
 
 body {
-  background-color: #ccc;
+  background-color: #ddd;
   color: #444;
   font-family: 'Lato', sans-serif;
   padding: 0;
@@ -24,10 +24,14 @@ button.flat {
   color: #f9f9f9;
   cursor: pointer;
   font-size: 1em;
-  padding: 2% 4%;
+  padding: .5em 1em;
 }
 
 button.flat.large {
+
+}
+
+button.flat.medium {
 
 }
 
@@ -39,16 +43,21 @@ button.flat.large {
   float: right;
 }
 
-.header {
-  position: fixed;
-  background-color: #f9f9f9;
-  width: 100%;
-  padding: .5% 0;
-  border-bottom: 2px solid #999;
+.top-buffer {
+  margin: 3.2em;
 }
 
-.header a,b,button,i,p,span {
-  margin: 0 .5rem;
+.header {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ccc;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.header > div {
+  padding: .5em .5em;
 }
 
 .header a {
@@ -69,16 +78,38 @@ a.big-link, a.big-link:hover {
   font-weight: bold;
 }
 
+.header button {
+  margin: 0 .5em;
+}
+
+.header a, .header span {
+  margin: 0 .5em;
+  padding: 1em 0;
+}
+
 div.section {
   background-color: #f9f9f9;
-  padding: 1.3%;
+  padding: 1em;
+  text-align: center;
 }
 
 div.footer {
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 div.inverted {
   background-color: #444;
   color: #f9f9f9;
+}
+
+div.section:not(.inverted) + div.section:not(.inverted), div.section.inverted + div.section.inverted {
+  border-top: 1px solid #ccc;
+}
+
+div.showcase {
+  background-image: url(http://placekitten.com/1150/510?image=3);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 6em;
 }
