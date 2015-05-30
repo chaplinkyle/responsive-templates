@@ -1,0 +1,75 @@
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic);
+
+body {
+  background-color: #f9f9f9;
+  color: #444;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #3eb489;
+}
+
+a:hover {
+  color: #98ff98;
+}
+
+button.flat {
+  background-color: #3eb489;
+  border: none;
+  border-radius: 5px;
+  color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 2% 4%;
+}
+
+button.flat.large {
+
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.inverted {
+  background-color: #444;
+  color: #f9f9f9;
+}
+
+.header {
+  position: fixed;
+  background-color: #f9f9f9;
+  width: 100%;
+  padding: .5% 0;
+  border-bottom: 2px solid #999;
+}
+
+.header a,b,button,i,p,span {
+  margin: 0 .5rem;
+}
+
+.header a {
+  color: #444;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #3eb489;
+}
+
+a.big-link, a.big-link:hover {
+  color: #444;
+  font-weight: bold;
+}
+
+div.section {
+  padding: 1.3%;
+}
